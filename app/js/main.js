@@ -261,7 +261,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports["default"] = function (form) {
-  return "\n    <form class='formtemplate'>\n      <div><input type=\"firstName\" placeholder='First Name' id='firstname'></div>\n      <div><input type=\"lastName\" placeholder='Last Name' id='lastname'></div>\n      <div><input type='age' placeholder='Age' id='age'></div>\n      <div><input type=\"gradelevel\" placeholder='Grade Level' id='gradelevel'></div>\n      <div><input type='gpa' placeholder='GPA' id='gpa'></div>\n      <div><input type='specialSkill' placeholder='Special Skill' id='skill'></div>\n      <div><input type='weapon' placeholder='Weapon of Choice' id='weapon'></div>\n    </form>\n    <button class='createStudent'>Add Student</button>\n  ";
+  return "\n    <form class='formtemplate'>\n      <div><input type=\"firstName\" placeholder='First Name' id='firstname' class='input'></div>\n      <div><input type=\"lastName\" placeholder='Last Name' id='lastname' class='input'></div>\n      <div><input type='age' placeholder='Age' id='age' class='input'></div>\n      <div><input type=\"gradelevel\" placeholder='Grade Level' id='gradelevel' class='input'></div>\n      <div><input type='gpa' placeholder='GPA' id='gpa' class='input'></div>\n      <div><input type='specialSkill' placeholder='Special Skill' id='skill' class='input'></div>\n      <div><input type='weapon' placeholder='Weapon of Choice' id='weapon' class='input'></div>\n      <button class='createStudent'>Add Student</button>\n    </form>\n    \n  ";
 };
 
 module.exports = exports["default"];
@@ -322,7 +322,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports["default"] = function (data) {
-  return "\n    <div class='student'>\n      <div class='backBtn' data-to='people'>\n        <i class=\"fa fa-arrow-circle-left fa-3x\"></i>\n      </div>\n      <img src='" + data.Photo + "' class='profilePic'>\n      <h3>Name: " + data.FirstName + " " + data.LastName + " <span>Age: " + data.Age + "</span></h3>\n      <p>Skill: " + data.SpecialSkill + " <span>Weapon: " + data.Weapon + "</p>\n    </div>\n    ";
+  return "\n    <div class='student'>\n      <div class='backBtn' data-to='people'>\n        <i class=\"fa fa-arrow-circle-left fa-3x\"></i>\n      </div>\n      <img src='" + data.Photo + "' class='profilePic'>\n      <h3>Name: " + data.FirstName + " " + data.LastName + "</h3> <span>Age: " + data.Age + "</span>\n      <p>Skill: " + data.SpecialSkill + "</p><p>Weapon: " + data.Weapon + "</p>\n    </div>\n    ";
 };
 
 module.exports = exports["default"];
