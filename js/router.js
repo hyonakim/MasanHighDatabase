@@ -51,12 +51,15 @@ export default Backbone.Router.extend ({
         SpecialSkill: $('#skill').val(),
         Weapon: $('#weapon').val()
       });
+
       newStudent.save().then(() => {
         alert('Add new student to Masan High?');
-        this.navigate(`people`, {trigger: true});
+        let $addStudent = $(event.currentTarget);
+        let route = $addStudent.data('to');
+        this.navigate(route, {trigger: true});
       });
     });
-  },
+  },  
 
   start() {
     Backbone.history.start();

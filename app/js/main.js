@@ -197,9 +197,12 @@ exports['default'] = _backbone2['default'].Router.extend({
         SpecialSkill: (0, _jquery2['default'])('#skill').val(),
         Weapon: (0, _jquery2['default'])('#weapon').val()
       });
+
       newStudent.save().then(function () {
         alert('Add new student to Masan High?');
-        _this.navigate('people', { trigger: true });
+        var $addStudent = (0, _jquery2['default'])(event.currentTarget);
+        var route = $addStudent.data('to');
+        _this.navigate(route, { trigger: true });
       });
     });
   },
@@ -261,7 +264,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports["default"] = function (form) {
-  return "\n    <form class='formtemplate'>\n      <div><input type=\"firstName\" placeholder='First Name' id='firstname' class='input'></div>\n      <div><input type=\"lastName\" placeholder='Last Name' id='lastname' class='input'></div>\n      <div><input type='age' placeholder='Age' id='age' class='input'></div>\n      <div><input type=\"gradelevel\" placeholder='Grade Level' id='gradelevel' class='input'></div>\n      <div><input type='gpa' placeholder='GPA' id='gpa' class='input'></div>\n      <div><input type='specialSkill' placeholder='Special Skill' id='skill' class='input'></div>\n      <div><input type='weapon' placeholder='Weapon of Choice' id='weapon' class='input'></div>\n      <button class='createStudent'>Add Student</button>\n    </form>\n    \n  ";
+  return "\n    <form class='formtemplate'>\n      <input type=\"firstName\" placeholder='First Name' id='firstname' class='input'>\n      <input type=\"lastName\" placeholder='Last Name' id='lastname' class='input'>\n      <input type='age' placeholder='Age' id='age' class='input'>\n      <input type=\"gradelevel\" placeholder='Grade Level' id='gradelevel' class='input'>\n      <input type='gpa' placeholder='GPA' id='gpa' class='input'></div>\n      <input type='specialSkill' placeholder='Special Skill' id='skill' class='input'>\n      <input type='weapon' placeholder='Weapon of Choice' id='weapon' class='input'>\n      <div><button class='createStudent' data-to='people'>Add Student</button></div>\n    </form>\n    \n  ";
 };
 
 module.exports = exports["default"];
