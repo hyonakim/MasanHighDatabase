@@ -191,9 +191,9 @@ exports['default'] = _backbone2['default'].Router.extend({
       var newStudent = new _resources.Person({
         FirstName: (0, _jquery2['default'])('#firstname').val(),
         LastName: (0, _jquery2['default'])('#lastname').val(),
-        Age: (0, _jquery2['default'])('#age').val(),
+        Age: (0, _jquery2['default'])(Number('#age')).val(),
         GradeLevel: (0, _jquery2['default'])('#gradelevel').val(),
-        GPA: (0, _jquery2['default'])('#gpa').val(),
+        GPA: (0, _jquery2['default'])(Number('#gpa')).val(),
         SpecialSkill: (0, _jquery2['default'])('#skill').val(),
         Weapon: (0, _jquery2['default'])('#weapon').val()
       });

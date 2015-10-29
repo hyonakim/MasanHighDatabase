@@ -45,9 +45,9 @@ export default Backbone.Router.extend ({
       let newStudent = new Person({
         FirstName: $('#firstname').val(),
         LastName: $('#lastname').val(),
-        Age: $('#age').val(),
+        Age: $(Number('#age')).val(),
         GradeLevel: $('#gradelevel').val(),
-        GPA: $('#gpa').val(),
+        GPA: $(Number('#gpa')).val(),
         SpecialSkill: $('#skill').val(),
         Weapon: $('#weapon').val()
       });
