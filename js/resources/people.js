@@ -6,7 +6,7 @@ export default Backbone.Collection.extend ({
 
 	url: AppURL,
 
-	model: Student,
+	model: Person,
 
 	parse(data) {
 		return data.results;

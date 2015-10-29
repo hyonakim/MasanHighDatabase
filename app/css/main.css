@@ -2025,6 +2025,47 @@ html {
   content: ""; }
 
 body {
-  background: #e2ebf3; }
+  background: #C8C8C8;
+  font-family: "Lato";
+  position: relative; }
+  body .logo {
+    margin-left: 25%; }
+  body h2 {
+    margin-left: 35%; }
+  body .person-list-item {
+    font-family: "Lato";
+    font-size: 2em;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #F5C82D;
+    margin-bottom: 2px;
+    margin-left: 30%;
+    width: 40%;
+    cursor: pointer; }
+    body .person-list-item img {
+      margin-left: 20%;
+      border: none;
+      border-radius: 35px; }
+    body .person-list-item span {
+      margin-left: 5%; }
+  body .person-list-item:hover {
+    background: #000;
+    color: #F5C82D;
+    border: 1px solid #F5C82D; }
+  body .fa {
+    position: absolute;
+    right: 24%;
+    bottom: 0%;
+    cursor: pointer; }
+  body .fa:hover {
+    color: #F5C82D; }
+  body .formtemplate {
+    margin-left: 30%;
+    margin-top: 5%; }
+  body .fullname,
+  body .studentage,
+  body .gradeinfo,
+  body .skills {
+    margin-bottom: 5%; }
 
 /*# sourceMappingURL=main.css.map */

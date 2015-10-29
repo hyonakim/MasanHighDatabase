@@ -2,6 +2,75 @@
 @import "neat";
 @import "font-awesome";
 
+//cool colors
+$goldColor: #F5C82D;
+$grayColor: #C8C8C8;
+$lightGray: #C2C2C2;
+
+//cool fonts 
+$lato: 'Lato';
+
 body {
-  background: #e2ebf3;
+  background: $grayColor;
+  font-family: $lato;
+  position: relative;
+
+  .logo {
+  	margin-left: 25%;
+  }
+
+  h2 {
+  	margin-left: 35%;
+  }
+
+  .person-list-item {
+  	font-family: $lato;
+  	font-size: 2em;
+  	border: 1px solid black;
+  	border-radius: 5px;
+  	background: $goldColor;
+  	margin-bottom: 2px;
+  	margin-left: 30%;
+  	width: 40%;
+  	cursor: pointer;
+
+  	img {
+  		margin-left: 20%;
+  		border: none;
+  		border-radius: 35px;
+  	}
+
+  	span {
+  		margin-left: 5%;
+  	}
+  }
+
+  .person-list-item:hover {
+  	background: #000;
+  	color: $goldColor;
+  	border: 1px solid $goldColor;
+  }
+
+  .fa {
+  	position: absolute;
+  	right: 24%;
+    bottom: 0%;
+    cursor: pointer;
+  }
+
+  .fa:hover {
+  	color: $goldColor;
+  }
+
+  .formtemplate {
+  	margin-left: 30%;
+  	margin-top: 5%;
+  }
+
+  .fullname,
+  .studentage,
+  .gradeinfo,
+  .skills {
+  	margin-bottom: 5%;
+  }
 }
